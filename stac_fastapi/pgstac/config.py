@@ -46,12 +46,12 @@ class Settings(ApiSettings):
         invalid_id_chars: list of characters that are not allowed in item or collection ids.
     """
 
-    postgres_user: str
-    postgres_pass: str
-    postgres_host_reader: str
-    postgres_host_writer: str
-    postgres_port: str
-    postgres_dbname: str
+    postgres_user: str = "pgstac"
+    postgres_pass: str = ""
+    postgres_host_reader: str = "127.0.0.1"
+    postgres_host_writer: str = "127.0.0.1"
+    postgres_port: str = "5432"
+    postgres_dbname: str = "wpncatapi"
 
     db_min_conn_size: int = 10
     db_max_conn_size: int = 10
